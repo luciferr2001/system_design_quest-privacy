@@ -46,12 +46,16 @@ process it on the developer's behalf.
 
 ## Account deletion
 
-You can sign out of the App at any time. **A self-service "delete my
-account" option inside the App is not yet available.** To request deletion
-of your account and associated data, contact the developer at the email
-address below with the email address or account you signed in with; the
-developer will delete the corresponding Firebase Authentication account and
-Firestore data.
+You can sign out at any time. You can also delete your account and all
+associated data yourself, inside the App: open the account menu (your
+profile picture at the top right) and choose **Delete account**, then confirm.
+This permanently deletes your Firebase Authentication account and your stored
+profile, progress, and mission run data. If you signed in with Google you may
+be asked to sign in again first, to confirm it is really you.
+
+You can also request deletion without the App installed: see
+https://luciferr2001.github.io/system_design_quest-privacy/DELETE_ACCOUNT.html
+or email the developer at the address below.
 
 ## Data collected by third-party advertising (Google AdMob)
 
