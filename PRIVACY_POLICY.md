@@ -1,6 +1,6 @@
 # Privacy Policy for System Design Quest
 
-_Last updated: 2026-09-30_
+_Last updated: 2026-10-01_
 
 System Design Quest ("the App") is developed and run by **Rutik Rathod**, an
 independent developer in India ("we", "the developer"). We are the controller
@@ -12,8 +12,11 @@ questions, requests, and complaints.
 
 You can use the App with a Google account or as an anonymous guest. Your
 learning progress is stored in the cloud so it can follow you across devices.
-The App shows ads through Google AdMob. You can delete your account and data
-yourself, inside the App, at any time.
+The App shows ads through Google AdMob, and uses Google Firebase Analytics and
+Crashlytics to understand how the App is used and to fix crashes. Analytics
+and crash reports follow your consent choices and are never collected from
+users under 13. You can delete your account and data yourself, inside the
+App, at any time.
 
 ## Who can use the App
 
@@ -58,6 +61,25 @@ your age; it relies on your answer.
   language, general region), IP address (used for ad delivery and to infer
   country or region), and how you interact with ads.
 
+**Usage and diagnostics data (Firebase Analytics and Crashlytics)**
+
+- *Usage events (Firebase Analytics):* which screens you open, and actions
+  such as starting or finishing a mission, answering a round, adding a
+  component, signing in or out, and using ads (for example, whether an ad
+  loaded). Each event may include simple details such as the mission name or
+  whether an answer was correct. Firebase also records an app-instance
+  identifier (a random ID for this install, not your account ID), your age
+  group, app version, device model, operating system version, language, and
+  approximate country from your IP address. We do not use your Android
+  Advertising ID for analytics, and we do not link analytics to your account.
+- *Crash and error reports (Firebase Crashlytics):* when the App crashes or
+  hits a handled error (for example a failed save or sign-in), a report with
+  the error, a stack trace, the app and device state at the time, and a random
+  install identifier.
+
+See "Analytics, crash reports and your consent" below for when these are
+switched on.
+
 **Technical data.** Google Firebase and Google Play services, which the App
 uses to run, process technical information such as IP address and device
 details as part of providing their service.
@@ -69,6 +91,8 @@ details as part of providing their service.
 | Create your account, save and show your progress | Account data, learning data | Performance of the service you asked for |
 | Keep younger users appropriately protected | Age group | Legitimate interests (protecting minors) |
 | Show ads that fund the App | Advertising data | Your consent, where the law requires it (EEA, UK, Switzerland); otherwise legitimate interests, limited to non-personalized ads |
+| Understand which features are used, so we can improve the App | Usage events | Your consent, where the law requires it (EEA, UK, Switzerland); otherwise legitimate interests |
+| Find and fix crashes and errors | Crash and error reports | Legitimate interests (keeping the App working and secure) |
 | Keep the service secure and prevent abuse | Technical data | Legitimate interests |
 
 Under India's Digital Personal Data Protection Act, 2023, we process your
@@ -98,10 +122,29 @@ Google handles advertising data under its own policies:
 https://policies.google.com/privacy and
 https://policies.google.com/technologies/partner-sites
 
+## Analytics, crash reports and your consent
+
+Both are **off by default** and are only switched on after you have chosen an
+age group, and never for users under 13.
+
+- **Usage analytics** run only where consent is not legally required, or
+  after you have given consent in Google's consent form (the same form used for
+  ads). While your consent choice is still outstanding, analytics stay off.
+- **Crash reports** run unless a consent choice you still owe is outstanding.
+  They contain technical information only.
+- You can change or withdraw your choices at any time from the account menu
+  (your profile picture, then **Ad privacy options**, shown wherever consent
+  applies). Withdrawing switches analytics off again.
+- Analytics event data is kept by Google for a limited period (no longer than
+  14 months). Crash reports are kept by Google for a limited period (about 90
+  days).
+
 ## Who receives your data
 
 - **Google Firebase** (Authentication and Cloud Firestore) stores and
   processes your account and learning data on our behalf.
+- **Google Firebase Analytics and Crashlytics** receive usage events and crash
+  reports as described above, and process them on our behalf.
 - **Google Sign-In** is used only if you choose to sign in with Google.
 - **Google AdMob** collects and uses advertising data as described above.
 
@@ -155,6 +198,7 @@ but we take reasonable steps to protect your data.
 
 - We do not access your camera, microphone, photos, contacts, or location.
 - We do not sell your data.
+- We do not collect analytics or crash reports from users under 13.
 - We do not show personalized ads to users aged 13 to 17, and we do not offer
   the App to users under 13.
 
